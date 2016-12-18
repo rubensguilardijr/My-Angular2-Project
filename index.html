@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta  charset="utf-8">
+    <base href="/">
+
+    <title>My-Angular2-Project</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="node_modules/core-js/client/shim.mim.js"></script>
+
+    <!-- Plugins necessarios para inicialização do @Angular -->
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <!-- Configurações do System.JS -->
+    <script src="systemjs.config.js"></script>
+
+    <!-- Importações dinamicas -->
+    <script type="text/javascript">
+
+      //Fazendo importações e informando erros
+      System.import('app').catch(function(err){ console.error(err);});
+    </script>
+  </head>
+  <body>
+
+    <!-- Chamando Componente Principal -->
+    <app>Cargando...</app>
+
+  </body>
+</html>
